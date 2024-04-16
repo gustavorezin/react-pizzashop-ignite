@@ -30,7 +30,7 @@ export function OrderTableRow() {
         </div>
       </TableCell>
       <TableCell className="font-medium">Gustavo Rezin Durigon</TableCell>
-      <TableCell className="font-medium">R$ 149,90</TableCell>
+      <TableCell className="text-right font-medium">R$ 149,90</TableCell>
       <TableCell>
         <Button variant="outline" size="xs">
           <ArrowRight className="mr-2 h-3 w-3" />
