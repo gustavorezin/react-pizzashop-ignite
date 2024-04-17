@@ -28,13 +28,13 @@ export function SignIn() {
     },
   });
 
-  const { mutateAsync: authenticate } = useMutation({
+  const { mutateAsync: authenticateFn } = useMutation({
     mutationFn: signIn,
   });
 
   async function handleSignIn(data: SignInForm) {
     try {
-      await authenticate({ email: data.email });
+      await authenticateFn({ email: data.email });
       toast.success("Enviamos um link de autenticação para seu e-mail.", {
         action: {
           label: "Reenviar",
